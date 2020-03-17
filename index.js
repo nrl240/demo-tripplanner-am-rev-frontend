@@ -17,7 +17,7 @@ const fetchResponse = async () => {
     const parentDiv = document.getElementById('parent')
     parentDiv.append(childDiv)
   } catch(err) {
-    console.err(`Error retrieving data from backend server: ${err}`)
+    console.error(`Error retrieving data from backend server: ${err}`)
   }
 }
 
