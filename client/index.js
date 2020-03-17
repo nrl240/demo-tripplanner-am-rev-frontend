@@ -2,7 +2,7 @@
 const fetchResponse = async () => {
   console.log('Running fetchResponse')
 
-  const backendResponse = await fetch('/api')
+  const backendResponse = await fetch('http://localhost:1337/api')
   console.log('backendResponse -->', backendResponse)
 
   const responseData = await backendResponse.json()
