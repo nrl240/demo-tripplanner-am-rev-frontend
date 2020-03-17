@@ -4,18 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack -w & nodemon server/app.js",
-    "start": "npm run start:dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack -w ./index.js -o ./public/bundle.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  },
   "devDependencies": {
-    "morgan": "^1.9.1",
     "nodemon": "^1.19.4",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
